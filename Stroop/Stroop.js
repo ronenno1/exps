@@ -1,7 +1,8 @@
 define(['pipAPI'], function(APIconstructor) {
 
     var API     = new APIconstructor();
-    
+    API.addSettings('onEnd', window.minnoJS.onEnd);
+
     
     API.addSettings('logger', {
         // gather logs in array
