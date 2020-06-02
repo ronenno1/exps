@@ -1,4 +1,8 @@
 define(['pipAPI'], function(APIconstructor) {
+
+    var API     = new APIconstructor();
+    
+    
     API.addSettings('logger', {
         // gather logs in array
         onRow: function(logName, log, settings, ctx){
@@ -33,7 +37,6 @@ define(['pipAPI'], function(APIconstructor) {
     });
 
 
-    var API     = new APIconstructor();
     var global  = API.getGlobal();
     var current = API.getCurrent();
 
